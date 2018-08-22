@@ -1,0 +1,171 @@
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
+                   a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                    
+                    .clearfix::after {
+                        content: '';
+                        display: block;
+                        clear: both;
+                    }
+                    .top{
+                        position:fixed;
+                        width: 100%;
+                    }
+                .topNavBar{
+                    padding-top: 18px;
+                    margin-left: 17px;
+                    margin-right: 16px;
+                   
+                }
+                    
+                    .log {
+                        float: left;
+                        font-family: 'Arial Black';
+                        font-size: 24px;
+                        padding-top: 5px;
+                    }
+                    
+                    .RS {
+                        color: rgb(230, 104, 106);
+                    }
+                    
+                    .card {
+                        color: rgb(154, 156, 162);
+                    }
+                    
+                    .navbar { 
+                        float: right;
+                    }
+                    
+                    nav>ul {
+                        list-style: none;
+                        padding-top: 14px;
+
+                        
+                    }
+                    
+                    nav>ul>li {
+                        float: left;
+                        margin: 0 14px;
+                    }
+                    
+                    nav>ul>li>a {
+                        font-size: 12px;
+                        color: rgb(154, 154, 154);
+                        font-weight: bold;
+                        padding: 5px 0px;
+                        border-top: 3px solid transparent;
+                        border-bottom: 3px solid transparent;
+                    }
+                    
+                    nav>ul>li>a:hover {
+                        border-bottom: 3px solid rgb(224, 101, 103)
+                    }
+                    .banner{
+                        height: 515px;
+                        background-image: url(./img/rs-cover.jpg);
+                        background-position: center center;
+                        background-size: cover;
+                    }
+                    .banner .mask{
+                        height: 515px;
+                        background-color:rgba(0,0,0,0.8);
+                    }
+                    main{
+                        background: rgb(239,239,239);
+                    }
+                    .private{
+                        padding: 50px;
+                        max-width: 840px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-color: #fff;
+                        
+                    }
+                    .privateImg{
+                        float: left;
+                        
+                        padding-right: 65px;
+                    }
+                    .hello{
+                        background-color: rgb(230,104,106);
+                        color: #fff;
+                        display: inline;
+                        padding: 5px 20px;
+                        position: relative;
+
+                    }
+                    .triangle{
+                        display: block;
+                        border-left: 10px solid rgb(230,104,106);
+                        border-right: 10px solid transparent;
+                        border-top: 0px solid transparent;
+                        border-bottom: 10px solid transparent;
+                        position: absolute;
+                        left: 4px;
+                        top: 100%;
+
+                        
+                    }
+                    .privateInfo{
+                        float:left;
+                        
+                    }
+                    .privateInfo>h3{
+                        margin-top: 32px;
+                        font-size: 2em;
+                    }
+                    hr{
+                        width: 470px;
+                        height: 0;
+                        border: none;
+                        border-top: 1px solid #DEDEDE;
+                        margin: 20px 0;
+                    }
+                    
+
+                    
+                    .privateInfo dl dt,dl dd{
+                                 float: left;
+                                 padding: 5px 0;
+                                }
+
+                                .privateInfo    dl dt{     width: 30%;
+                                font-weight: bold;
+                                }
+                                .privateInfo dl dd{
+                                 width: 70%;
+                                color: #9da0a7;
+                                }
+                   .icons{
+                        width: 940px;
+                       text-align: center;
+                        margin: 0 auto;
+
+                        
+                        background-color: rgb(230,104,106); 
+                    }
+                    .icons>a{
+                        display: inline-block;
+                        width: 40px;
+                        line-height: 30px;
+                        padding: 5px 0;
+                        border-radius: 50%;
+                        margin: 16px;
+                    }
+                    .icons>a:hover{
+                        background-color: rgb(207, 93, 97);
+                    
+                    }
+                    .icons>a>svg{
+                        width: 30px;
+                        height: 30px; 
+                        fill: white;
+                        vertical-align: top;
+                      }
+                     
