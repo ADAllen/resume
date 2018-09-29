@@ -18,6 +18,13 @@
                         position:fixed;
                         width: 100%;
                     }
+                    .top.sticky{
+                        background: white;
+                        padding-bottom:  25px ;
+                        z-index: 1;
+                        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+
+                    }
                 .topNavBar{
                     padding-top: 18px;
                     margin-left: 17px;
@@ -65,8 +72,22 @@
                         border-bottom: 3px solid transparent;
                     }
                     
-                    .topNavBar>nav>ul>li>a:hover {
-                        border-bottom: 3px solid rgb(224, 101, 103)
+                    .topNavBar>nav>ul>li>a:hover::after {
+                        background: rgb(224, 101, 103);
+                        content: '';
+                        display: block;
+                        height: 3px;
+                        animation: menuSlide 0.4s;
+                        margin-top: 6px;
+
+                    }
+                    @keyframes menuSlide{
+                        0%{
+                            width:0;
+                        }
+                        100%{
+                            width:100%;
+                        }
                     }
                     .banner{
                         height: 515px;
