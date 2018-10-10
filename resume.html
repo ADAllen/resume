@@ -89,16 +89,16 @@
                 <span class="RS">RS</span>
                 <span class="card">card</span>
             </a>
-            <nav class="navbar clearfix">
-                <ul>
+            <nav class="navbar ">
+                <ul class="clearfix">
                     <li>
-                        <a href="#">关于</a>
+                        <a href="#siteAbout">关于</a>
                     </li>
                     <li>
-                        <a href="#">技能</a>
+                        <a href="#siteSkills">技能</a>
                     </li>
                     <li>
-                        <a href="#">作品</a>
+                        <a href="#siteWorks">作品</a>
                         <ul class="submenu">
                             <li>作品1</li>
                             <li>作品2</li>
@@ -130,8 +130,9 @@
         <div class="mask"></div>
     </div>
     <main>
+        
 
-        <div class="private clearfix">
+        <div  id="siteAbout"  class="private clearfix">
             <div class="privateImg">
                 <img src="./img/avatar.jpg" alt="丑照">
             </div>
@@ -187,9 +188,10 @@
 
 
     </main>
+    
 
-    <h1 style="text-align: center ;margin-top:70px ;">技能</h1>
-    <div class="skills">
+    <h1 id="siteSkills" style="text-align: center ;margin-top:70px ;">技能</h1>
+    <div  class="skills">
         
         <ol class="clearfix">
             <li>
@@ -220,7 +222,7 @@
         </ol>
 
     </div>
-    <section>
+    <section id="siteWorks">
             <h1 style="text-align: center ;margin-top:70px ; font-size:32px;">作品集</h1>
             <nav>
                 <ul class="clearfix">
@@ -283,16 +285,17 @@
         x.currentTarget.classList.remove('active')
         }
     }
-        let aTags = document.querySelectorAll('nav.navbar > ul > li > a')
-        for(let i=0; i<aTags.length; i++){
-        aTags[i].onclick = function(x){
-         x.preventDefault()
-        let a = x.currentTarget
-        let href = a.getAttribute('href') //'#siteAbout'
-        let element = document.querySelector(href)
-        let top = element.offsetTop
-        window.scrollTo(0, top - 80)
-     }
+        
+    let aTags = document.querySelectorAll('nav.navbar>ul>li>a')
+    for(let i=0;i<aTags.length;i++){
+        aTags[i].onclick=function(x){
+            x.preventDefault()
+            let a=x.currentTarget
+            let href=a.getAttribute('href')
+            let element=document.querySelector(href)
+            let top =element.offsetTop
+            window.scroll(0,top-80)
+        }
     }
     </script>
     
